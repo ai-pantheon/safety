@@ -1,8 +1,8 @@
-# Aegis
+# Safety
 
 **Client-side encryption and request anonymization for private data stores.**
 
-Your data. Your keys. Your control. Aegis gives you two cryptographically bound layers of protection:
+Your data. Your keys. Your control. Safety gives you two cryptographically bound layers of protection:
 
 | Layer | What It Does |
 |-------|-------------|
@@ -18,14 +18,14 @@ Part of the **[You Own You](https://ai-pantheon.ai)** initiative by **[AI Panthe
 ## Install
 
 ```bash
-pip install aegis-cloak
+pip install safety-cloak
 ```
 
 Or from source:
 
 ```bash
-git clone https://github.com/ai-pantheon/aegis.git
-cd aegis
+git clone https://github.com/ai-pantheon/safety.git
+cd safety
 pip install -e .
 ```
 
@@ -36,7 +36,7 @@ Requires Python 3.10+ and the `cryptography` library.
 ## Quick Start
 
 ```python
-from aegis import Cloak
+from safety import Cloak
 
 cloak = Cloak("my-secret-passphrase", vault_dir="./my-vault")
 
@@ -163,9 +163,9 @@ python test_integration.py
 
 ## Security Notes
 
-- **Passphrase strength matters.** Aegis uses PBKDF2 with 600K iterations, but a weak passphrase is still a weak passphrase.
+- **Passphrase strength matters.** Safety uses PBKDF2 with 600K iterations, but a weak passphrase is still a weak passphrase.
 - **Privacy tokens are simplified.** Production multi-user deployments should use blind-signed RSA tokens per RFC 9576-9578 (Privacy Pass protocol). The HMAC implementation here is suitable for single-user or trusted environments.
-- **This is not a replacement for TLS.** Aegis protects data at rest and against server-side access. Use TLS for data in transit.
+- **This is not a replacement for TLS.** Safety protects data at rest and against server-side access. Use TLS for data in transit.
 - **Audit the code.** That's why it's open source.
 
 ---
