@@ -1,5 +1,25 @@
 # Safety
 
+## In Plain English
+
+You know how you put your valuables in a safe at home? You set the combination. Nobody else knows it. Even the company that made the safe doesn't know your combination.
+
+**Safety is that safe, but for your digital life.**
+
+It does two things:
+
+1. **It locks your stuff.** Your data gets scrambled with a password only you know. Even if someone broke into the server and stole every file, all they'd see is random nonsense. Without your password, it's useless.
+
+2. **It hides *how* you use it.** Imagine if someone couldn't read your diary, but they could still see that you opened it at 3am on a Tuesday and wrote 4 pages. That's still information. Safety erases even those clues. It makes every request look the same size, in random order, with no fingerprints.
+
+**What does "open source" mean?** It means the blueprints are public. Anyone can read the code, check our work, and verify that we did what we said. No hidden doors. No shortcuts. Just a safe you can trust because you can see how it's built.
+
+Part of the **[You Own You](https://ai-pantheon.ai)** initiative by **[AI Pantheon](https://ai-pantheon.ai)**.
+
+---
+
+## The Technical Version
+
 **Client-side encryption and request anonymization for private data stores.**
 
 Your data. Your keys. Your control. Safety gives you two cryptographically bound layers of protection:
