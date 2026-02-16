@@ -35,8 +35,8 @@ NONCE_SIZE = 12  # AES-256-GCM standard
 KEY_SIZE = 32    # 256 bits
 
 # Binding context — used in HKDF to domain-separate the bound key
-_BINDING_CONTEXT = b"aegis-vault-cloak-binding-v1"
-_SEAL_CONTEXT = b"aegis-cloak-seal-derivation-v1"
+_BINDING_CONTEXT = b"safety-vault-cloak-binding-v1"
+_SEAL_CONTEXT = b"safety-cloak-seal-derivation-v1"
 
 
 def derive_kek(passphrase: str, salt: bytes) -> bytes:

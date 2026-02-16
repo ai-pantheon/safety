@@ -18,8 +18,8 @@ Dependencies (not yet installed):
   - SOL tokens for rent + transactions
 """
 
-from aegis.connectors.base import ChainConnector
-from aegis.shamir import Share
+from safety.connectors.base import ChainConnector
+from safety.shamir import Share
 
 
 class SolanaConnector(ChainConnector):

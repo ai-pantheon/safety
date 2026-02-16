@@ -18,8 +18,8 @@ Dependencies (not yet installed):
   - AR tokens for storage payment
 """
 
-from aegis.connectors.base import ChainConnector
-from aegis.shamir import Share
+from safety.connectors.base import ChainConnector
+from safety.shamir import Share
 
 
 class ArweaveConnector(ChainConnector):

@@ -10,8 +10,8 @@ from pathlib import Path
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
-from aegis.connectors.base import ChainConnector
-from aegis.shamir import Share
+from safety.connectors.base import ChainConnector
+from safety.shamir import Share
 
 
 class EthereumConnector(ChainConnector):

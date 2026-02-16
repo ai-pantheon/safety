@@ -1,5 +1,5 @@
 """
-Aegis — Basic Usage Example
+Safety — Basic Usage Example
 
 Demonstrates encrypting and anonymizing a personal data store.
 The Vault and Cloak are cryptographically bound — you MUST use the
@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from aegis import Cloak
+from safety import Cloak
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
     passphrase = "my-secret-passphrase-change-this"
 
     print("=" * 50)
-    print("  Aegis — Encrypted + Anonymized Storage")
+    print("  Safety — Encrypted + Anonymized Storage")
     print("=" * 50)
 
     cloak = Cloak(passphrase, vault_dir="./example-vault")

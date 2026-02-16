@@ -9,12 +9,12 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from aegis.shamir import split, combine, Share
-from aegis.connectors.self_hosted import SelfHostedConnector
-from aegis.connectors.bitcoin import BitcoinConnector
-from aegis.connectors.arweave import ArweaveConnector
-from aegis.connectors.solana import SolanaConnector
-from aegis.connectors.filecoin import FilecoinConnector
+from safety.shamir import split, combine, Share
+from safety.connectors.self_hosted import SelfHostedConnector
+from safety.connectors.bitcoin import BitcoinConnector
+from safety.connectors.arweave import ArweaveConnector
+from safety.connectors.solana import SolanaConnector
+from safety.connectors.filecoin import FilecoinConnector
 
 
 def test_self_hosted_store_and_retrieve():

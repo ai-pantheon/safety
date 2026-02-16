@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.backends._legacy:_Backend"
 
 [project]
-name = "aegis-cloak"
+name = "safety-cloak"
 version = "0.3.0"
 description = "Client-side encryption and request anonymization for private data stores"
 readme = "README.md"
@@ -31,8 +31,8 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://ai-pantheon.ai"
-Repository = "https://github.com/ai-pantheon/aegis"
-Issues = "https://github.com/ai-pantheon/aegis/issues"
+Repository = "https://github.com/ai-pantheon/safety"
+Issues = "https://github.com/ai-pantheon/safety/issues"
 
 [tool.setuptools.packages.find]
-include = ["aegis*"]
+include = ["safety*"]

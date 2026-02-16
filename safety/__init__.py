@@ -1,8 +1,8 @@
 """
-Aegis — The Cloak
+Safety — The Cloak
 Client-side encryption and request anonymization for private data stores.
 
-Aegis provides two cryptographically bound layers:
+Safety provides two cryptographically bound layers:
 1. Vault — AES-256-GCM envelope encryption (the lock)
 2. Cloak — Request anonymization: padding, stripping, shuffling, tokens (the cloak)
 
@@ -11,17 +11,17 @@ a seal that only the Cloak can derive. You MUST use the Cloak to access the Vaul
 Attempting to use the Vault directly will fail — not by policy, but by math.
 
 Usage:
-    from aegis import Cloak
+    from safety import Cloak
     cloak = Cloak("my-passphrase")
     cloak.store({"category": {"key": "value"}})
 """
 
-from aegis.cloak import Cloak
-from aegis.padding import pad_to_bucket, unpad_from_bucket, BUCKET_SIZES
-from aegis.shuffle import ShuffleBuffer
-from aegis.tokens import PrivacyTokenIssuer
-from aegis.shamir import split as shamir_split, combine as shamir_combine, Share
-from aegis.seal import SealAuthority, CloakProof, ChainType
+from safety.cloak import Cloak
+from safety.padding import pad_to_bucket, unpad_from_bucket, BUCKET_SIZES
+from safety.shuffle import ShuffleBuffer
+from safety.tokens import PrivacyTokenIssuer
+from safety.shamir import split as shamir_split, combine as shamir_combine, Share
+from safety.seal import SealAuthority, CloakProof, ChainType
 
 __version__ = "0.3.0"
 __all__ = [

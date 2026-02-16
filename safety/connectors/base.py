@@ -4,7 +4,7 @@ Every blockchain authority implements this interface.
 """
 
 from abc import ABC, abstractmethod
-from aegis.shamir import Share
+from safety.shamir import Share
 
 
 class ChainConnector(ABC):

@@ -10,8 +10,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from aegis.shamir import split, combine, verify_shares, Share
-from aegis.seal import SealAuthority, CloakProof, DEFAULT_THRESHOLD
+from safety.shamir import split, combine, verify_shares, Share
+from safety.seal import SealAuthority, CloakProof, DEFAULT_THRESHOLD
 
 
 TEST_DIR = Path(__file__).parent / "test-seal-authority"

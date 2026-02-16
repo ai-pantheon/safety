@@ -1,5 +1,5 @@
 """
-Aegis — Integration Tests
+Safety — Integration Tests
 Tests the full encrypt/pad/shuffle/verify pipeline.
 Tests cryptographic binding (Vault cannot operate without Cloak).
 """
@@ -12,9 +12,9 @@ from pathlib import Path
 # Add parent to path for local development
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from aegis import Cloak, pad_to_bucket, unpad_from_bucket, BUCKET_SIZES
-from aegis import ShuffleBuffer, PrivacyTokenIssuer
-from aegis.vault import Vault, derive_kek, derive_seal_key, SALT_SIZE
+from safety import Cloak, pad_to_bucket, unpad_from_bucket, BUCKET_SIZES
+from safety import ShuffleBuffer, PrivacyTokenIssuer
+from safety.vault import Vault, derive_kek, derive_seal_key, SALT_SIZE
 import os, base64
 
 TEST_PASSPHRASE = "test-passphrase-do-not-use-in-production"
@@ -220,7 +220,7 @@ def test_vault_correct_seal_works():
 def main():
     setup()
     print("=" * 50)
-    print("  Aegis Integration Tests")
+    print("  Safety Integration Tests")
     print("  (with cryptographic binding)")
     print("=" * 50)
     print()

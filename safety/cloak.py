@@ -25,10 +25,10 @@ import base64
 import time
 from pathlib import Path
 
-from aegis.vault import Vault, derive_kek, derive_seal_key, SALT_SIZE
-from aegis.padding import pad_to_bucket
-from aegis.shuffle import ShuffleBuffer
-from aegis.tokens import PrivacyTokenIssuer
+from safety.vault import Vault, derive_kek, derive_seal_key, SALT_SIZE
+from safety.padding import pad_to_bucket
+from safety.shuffle import ShuffleBuffer
+from safety.tokens import PrivacyTokenIssuer
 
 
 # Fields allowed through metadata stripping

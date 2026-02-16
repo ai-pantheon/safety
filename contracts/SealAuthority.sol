@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 /**
  * @title SealAuthority
- * @notice One node in the Aegis 7-chain seal authority network.
+ * @notice One node in the Safety 7-chain seal authority network.
  *
  * Holds a single Shamir share of the production seal secret.
  * Verifies Cloak proofs before releasing partial seals.

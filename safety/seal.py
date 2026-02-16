@@ -32,8 +32,8 @@ from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
 
-from aegis.shamir import split, combine, Share
-from aegis.connectors.base import ChainConnector
+from safety.shamir import split, combine, Share
+from safety.connectors.base import ChainConnector
 
 
 class ChainType(Enum):

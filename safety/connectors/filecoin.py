@@ -17,8 +17,8 @@ Dependencies (not yet installed):
   - FIL tokens for storage deals (or free tier via web3.storage)
 """
 
-from aegis.connectors.base import ChainConnector
-from aegis.shamir import Share
+from safety.connectors.base import ChainConnector
+from safety.shamir import Share
 
 
 class FilecoinConnector(ChainConnector):
